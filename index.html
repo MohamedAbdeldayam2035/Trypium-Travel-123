@@ -1,0 +1,80 @@
+<!doctype html>
+<html> 
+ <head> 
+  <title>Trypium - Customer Registration</title> 
+ <style type="text/css" id="dcoder_stylesheet">/* Set the font family and background color for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: White;
+}
+
+/* Center the content on the page */
+form {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 20px;
+  background-image: url("https://assets.dcoder.tech/63fb3e0aae1ce02334cf46df/6421f15c41fbf339d213d750/294550189_414786560669814_975303661564941423_n.jpg") ;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background-size: cover;
+}
+
+/* Style the input fields and labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"], input[type="email"], input[type="tel"], select, input[type="date"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+/* Align the submit button to the center of the form */
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Hover effect on the submit button */
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}</style></head> 
+ <body> <label for="color-picker">Color:</label> 
+  <input type="color" id="color-picker"> 
+  <h1>Customer Registration</h1> 
+  <form> <label>Name:</label> 
+   <input type="text" name="name"> 
+   <br> 
+   <br> <label>Email:</label> 
+   <input type="email" name="email"> 
+   <br> 
+   <br> <label>Phone number:</label> 
+   <input type="tel" name="phone"> 
+   <br> 
+   <br> <label>Country:</label> <select name="country"> <option value="egypt">Egypt</option> <option value="saudi arabia">Saudi Arabia</option> <option value="united arab emirates">United Arab Emirates</option> <!-- Add more country options here --> </select> 
+   <br> 
+   <br> <label>Arrival date:</label> 
+   <input type="date" name="arrival_date"> 
+   <br> 
+   <br> <label>Departure date:</label> 
+   <input type="date" name="departure_date"> 
+   <br> 
+   <br> 
+   <input type="submit" value="Register"> 
+  </form> 
+ 
+<script type="text/javascript" id="dcoder_script">const colorPicker = document.getElementById("color-picker");
+      colorPicker.addEventListener("change", () => {
+        document.body.style.backgroundColor = colorPicker.value;
+      });</script></body></html>
